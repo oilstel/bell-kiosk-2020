@@ -1,0 +1,125 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+@font-face {
+  font-family: 'LinikSans-Regular';
+  src: url('../fonts/LinikSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/LinikSans-Regular.woff') format('woff'), url('../fonts/LinikSans-Regular.ttf')  format('truetype'), url('../fonts/LinikSans-Regular.svg#LinikSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 1.5em;
+  font-family: 'LinikSans-Regular';
+  font-size: .8em;
+  color: #000;
+  background: #B1C7B7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  -webkit-text-size-adjust: none; 
+}
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+  line-height: initial;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: .8em;
+  font-weight: normal;
+  line-height: 1;
+  opacity: .7;
+  padding: 2em 0;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1;
+  border-bottom: 1px solid #000;
+  padding: 2em 0;
+  margin-top: 7em !important;
+  display: block;
+}
+
+/* #home {
+  min-width: 900px;
+} */
+
+#bells {
+  width: 220px;
+  height: 40px;
+  background: url(../images/bells.svg) no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 4em;
+  margin-top: 2em;
+  display: block;
+}
+
+main section {
+  max-width: 180px;
+  float: left;
+  margin: 0 6em 1em 0;
+  /* margin-bottom: 1em; */
+  min-height: 250px;
+}
+
+main section:last-child {
+  margin-right: 0;
+}
+
+a {
+  color: #000;
+}
+
+main section p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: .5em;
+  line-height: 1.3em;
+}
+
+main section a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: .5em;
+  line-height: 1.3em;
+}
+
+main section.full {
+  max-width: 100% !important;
+  float: none !important;
+  margin: 2em 0;
+}
+
+footer {
+  /* border-top: .25px solid rgba(0, 0, 0, 0.76); */
+  padding-top: 1em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 1.5em;
+  font-size: .8em;
+  opacity: .7;
+}
+
+footer a { text-decoration: none; }
+
+.clear { clear: both; }
+
+main section a:hover, footer a:hover { text-decoration: underline; }
+
+@media (max-width: 535px) {
+  main section {
+    max-width: 100%;
+    float: none;
+  }
+  footer {
+    position: relative;
+    margin: 0;
+    margin-top: 8em;
+  }
+}

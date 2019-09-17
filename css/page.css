@@ -1,0 +1,43 @@
+body {
+    overflow-x: hidden;
+}
+
+article {
+    margin: 0 auto;
+}
+
+article p {
+    line-height: 2em;
+}
+
+h1, h2, h3, p, blockquote {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+p, blockquote{ margin-top: 2em; margin-bottom: 2em; }
+
+figure {
+    max-width: 800px;
+    margin: 5em auto;
+}
+
+img { width: 100%; }
+
+.two-up {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+    grid-gap: 20px;
+}
+
+.three-up {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    grid-gap: 20px;
+}
+
+.four-up {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) ) ;
+    grid-gap: 20px;
+}
