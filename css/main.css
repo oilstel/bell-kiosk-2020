@@ -63,7 +63,7 @@ main section {
   float: left;
   margin: 0 6em 1em 0;
   /* margin-bottom: 1em; */
-  min-height: 250px;
+  min-height: 300px;
 }
 
 main section:last-child {
@@ -116,6 +116,7 @@ main section a:hover, footer a:hover { text-decoration: underline; }
   main section {
     max-width: 100%;
     float: none;
+    min-height: auto;
   }
   footer {
     position: relative;
